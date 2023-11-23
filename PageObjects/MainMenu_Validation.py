@@ -5,6 +5,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Mainmenu_Validation:
+    # locating to find an elements given field using locators
+
     textbox_Username_xpath = "//input[@name='username']"
     textbox_Password_name = "password"
     button_Login_xpath = "//button[@type='submit']"
@@ -25,19 +27,21 @@ class Mainmenu_Validation:
         self.driver = driver
 
     def setUsername(self,username):
-        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).clear()
-        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).send_keys(username)
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).clear() # clear if any exist
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).send_keys(username) # enter valid username
 
     def setPassword(self,password):
-        self.driver.find_element(By.NAME,self.textbox_Password_name).clear()
-        self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(password)
+        self.driver.find_element(By.NAME,self.textbox_Password_name).clear() # clear if any exist
+        self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(password) # enter valid password
 
     def clickLogin(self):
-        self.driver.find_element(By.XPATH, self.button_Login_xpath).click()
+        self.driver.find_element(By.XPATH, self.button_Login_xpath).click() # Click login button
 
     def getMainmenu(self):
 
  ##################################### CODE - 1 ###############################################
+
+    # Validating main menu on side pane is displaying or not
 
         Admin_menu = self.driver.find_element(By.XPATH,self.menu_Admin_xpath)
         print("Is Admin displayed : ",Admin_menu.is_displayed())
