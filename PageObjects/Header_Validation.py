@@ -28,6 +28,33 @@ class Header_Validation:
         self.driver.find_element(By.NAME,self.textbox_Password_name).clear()
         self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(password)
 
+    ################################# NEGATIVE CASES - LOGIN CREDENTIALS ############################################
+    def setValidUsername(self,valid_username):
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).clear()
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).send_keys(valid_username)
+
+    def setInvalidPassword(self,invalid_password):
+        self.driver.find_element(By.NAME,self.textbox_Password_name).clear()
+        self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(invalid_password)
+
+    def setInvalidUsername2(self,invalid_username_2):
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).clear()
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).send_keys(invalid_username_2)
+
+    def setValidPassword2(self,valid_password_2):
+        self.driver.find_element(By.NAME,self.textbox_Password_name).clear()
+        self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(valid_password_2)
+
+    def setInvalidUsername3(self,invalid_username_3):
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).clear()
+        self.driver.find_element(By.XPATH,self.textbox_Username_xpath).send_keys(invalid_username_3)
+
+    def setInvalidPassword3(self,invalid_password_3):
+        self.driver.find_element(By.NAME,self.textbox_Password_name).clear()
+        self.driver.find_element(By.NAME,self.textbox_Password_name).send_keys(invalid_password_3)
+
+  #############################################################################################################
+
     def clickLogin(self):
         self.driver.find_element(By.XPATH, self.button_Login_xpath).click()
 

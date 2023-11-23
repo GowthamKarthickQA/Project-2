@@ -17,6 +17,10 @@ class Forgot_password:
         self.driver.find_element(By.XPATH,self.textbox_username_xpath).clear()
         self.driver.find_element(By.XPATH, self.textbox_username_xpath).send_keys(username)
 
+    def setInvalidUserName(self,invalid_username_2):
+        self.driver.find_element(By.XPATH,self.textbox_username_xpath).clear()
+        self.driver.find_element(By.XPATH, self.textbox_username_xpath).send_keys(invalid_username_2)
+
     def clickResetPassword(self):
         self.driver.find_element(By.XPATH,self.button_resetpassword_xpath).click()
 
