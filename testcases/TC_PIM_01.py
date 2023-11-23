@@ -8,6 +8,7 @@ from Utilities.ReadProperties import ReadConfig
 
 
 class Test_reset_password:
+    
     baseURL = ReadConfig.getApplicationURL() # get baseURL from readproperties.py
     username = ReadConfig.getUsername() # get username from readproperties.py
     password = ReadConfig.getPassword() # get password from readproperties.py

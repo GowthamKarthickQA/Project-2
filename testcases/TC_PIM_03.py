@@ -7,9 +7,7 @@ from Utilities.ReadProperties import ReadConfig
 
 
 class Test_Mainmenu_Validation:
-
     # Reading login credetials, URl from readproperties.py
-
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()

@@ -5,8 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Mainmenu_Validation:
-    # locating to find an elements given field using locators
-
+    # Using locators,finding an element
     textbox_Username_xpath = "//input[@name='username']"
     textbox_Password_name = "password"
     button_Login_xpath = "//button[@type='submit']"

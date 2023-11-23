@@ -5,6 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Header_Validation:
+    # Using locators,finding an element
     textbox_Username_xpath = "//input[@name='username']"
     textbox_Password_name = "password"
     button_Login_xpath = "//button[@type='submit']"

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 class Forgot_password:
-    # Locators for finding element
+    # Using locators,finding an element
     link_forgotpassword_xpath = "//*[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']"
     textbox_username_xpath = "//input[@class='oxd-input oxd-input--active']"
     button_resetpassword_xpath = "//button[text()=' Reset Password ']"

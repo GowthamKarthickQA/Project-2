@@ -8,6 +8,7 @@ from Utilities.ReadProperties import ReadConfig
 
 class Test_Header_Validation:
     # Getting credential details, login URL from readproperties.py
+
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()
